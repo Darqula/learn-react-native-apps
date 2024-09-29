@@ -15,6 +15,7 @@ export default function TabLayout() {
             <Tabs.Screen
                 name='home'
                 options={{ href: null }} />
+            <Tabs.Screen name='quotes/index' options={{ title: 'Quotes', tabBarIcon: ({ color }) => <FontAwesome size={24} name='book' color={color} /> }} />
         </Tabs>
     )
 }
