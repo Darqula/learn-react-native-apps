@@ -6,17 +6,17 @@ import { useState, useRef } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { captureRef } from 'react-native-view-shot';
 
-import { ImageViewer } from './components/ImageViewer';
-import Button from './components/Button';
-import IconButton from './components/IconButton';
-import CircleButton from './components/CircleButton';
-import EmojiPicker from './components/EmojiPicker';
-import EmojiList from './components/EmojiList';
-import EmojiSticker from './components/EmojiSticker';
+import { ImageViewer } from 'components/ImageViewer';
+import Button from 'components/Button';
+import IconButton from 'components/IconButton';
+import CircleButton from 'components/CircleButton';
+import EmojiPicker from 'components/EmojiPicker';
+import EmojiList from 'components/EmojiList';
+import EmojiSticker from 'components/EmojiSticker';
 
-const PlaceholderImage = require('./assets/images/background-image.png')
+const PlaceholderImage = require('assets/images/background-image.png')
 
-export default function App() {
+export default function Smasher() {
   const imageRef = useRef();
 
   const [showAppOptions, setShowAppOptions] = useState(false);
